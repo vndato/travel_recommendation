@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3cm;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 50px;
+    /* padding: 0; */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
+
+nav h1 {
+    padding-left: 1cm;
+    font-size: xx-large;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1cm;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-input {
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: 14px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navlink:link {
+    text-decoration: none;
+    color: white;
+}
+
+.navlink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.navlink:hover {
+    text-decoration: none;
+}
+
+.search-button {
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Lexend', sans-serif;
+    font-size: 15px;
+    background-color: #24282b;
+    color: #f6f6f6;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 80px;
+}
+
+body {
+    background-image: url(./images/homepage-backgr.jpg);
+    background-image: linear-gradient(to left, transparent, rgb(167, 123, 46)), url(./images/homepage-backgr.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro-heading {
+    color: rgb(254, 242, 242);
+    margin-top: 2.5cm;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    width: max-content;
+    font-weight: bold;
+}
+
+.intro-text {
+    color: rgb(254, 242, 242);
+    width: 600px;
+    margin-top: 2.5cm;
+    margin-left: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+
+.main {
+    display: flex;
+    height: 700px;
+    flex-direction: row;
+}
+
+.main2 {
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+}
+
+.result-div {
+    width: 100%;
+    padding: 30px;
+}
+
+.result-card {
+    margin-bottom: 30px;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 15px;
+}
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.result-card-lower {
+    margin: 15px;
+}
+
+.visit-button {
+    margin-bottom: 15px;
+}
+
+.icon-div {
+    display: flex;
+    align-items: center;
+    margin-left: 0.3cm;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.icon {
+    margin: 8px;
+}
+
+.aboutUs-heading {
+    color: rgb(254, 242, 242);
+    margin-top: 2.5cm;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    width: max-content;
+    font-weight: bold;
+}
+
+.aboutUs-text {
+    color: rgb(254, 242, 242);
+    width: 800px;
+    margin-left: 3.5cm;
+    margin-top: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(60, 38, 4, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content-div1 {
+    margin-left: 3cm;
+    width: max-content;
+}
+
+.content-div2 {
+    margin-left: 3cm;
+    margin-top: 1cm;
+    color: rgb(254, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    font-weight: bold;
+}
+
+.content-div2 h2 {
+    font-size: 50px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    color: rgb(254, 242, 242);
+    width: 300px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(60, 38, 4, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1.5cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-top: 15px;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-weight: 100;
+    color: #faecde;
+}
+
+.card div {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 24%;
+    margin-top: 20px;
+}
+
+.content-div3 {
+    margin-left: 3cm;
+    margin-top: 1cm;
+    color: rgb(254, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    font-weight: bold;
+}
+
+.content-div3 h2 {
+    margin-top: 60px;
+    font-size: 60px;
+    width: max-content;
+}
+
+.form-div {
+    color: rgb(254, 242, 242);
+    width: 500px;
+    height: max-content;
+    margin-left: 5.5cm;
+    margin-top: 2cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: justify;
+    background: rgba(60, 38, 4, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.main-contact {
+    display: flex;
+}
+
+.text-about {
+    color: rgb(254, 242, 242);
+    width: max-content;
+    margin-top: 2.5cm;
+    margin-left: 3.5cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.name {
+    font-family: 'Lexend', sans-serif;
+    color: #e9d9d9;
+    margin-left: 14px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: rgba(60, 38, 4, 0.6);
+    border-radius: 15px;
+    width: 90%;
+    height: 1cm;
+    padding: 10px;
+}
+
+.email {
+    font-family: 'Lexend', sans-serif;
+    color: #e9d9d9;
+    margin-left: 14px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: rgba(60, 38, 4, 0.6);
+    border-radius: 15px;
+    width: 90%;
+    height: 1cm;
+    padding: 10px;
+}
+
+.message {
+    font-family: 'Lexend', sans-serif;
+    color: #e9d9d9;
+    margin-left: 14px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: rgba(60, 38, 4, 0.6);
+    border-radius: 15px;
+    width: 90%;
+    height: 7cm;
+    padding: 10px;
+}
