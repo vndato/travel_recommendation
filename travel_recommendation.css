@@ -353,3 +353,11 @@ body {
     height: 7cm;
     padding: 10px;
 }
+
+.contact-btn {
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #24282b;
+    color: white;
+}
